@@ -1,0 +1,19 @@
+CODIGO BANCO DE DADOS 
+CREATE SCHEMA biblioteca;
+
+CREATE TABLE cadastrar_livro (
+    codigo INT NOT NULL,
+    editora VARCHAR(50) NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    autor VARCHAR(50) NOT NULL,
+    faixa_etaria INT NOT NULL,
+    PRIMARY KEY (codigo)
+);
+
+
+CREATE TABLE alugar_livro (
+    nome VARCHAR(50) NOT NULL,
+    data_que_alugou DATE NOT NULL,
+    data_de_devolucao DATE NOT NULL,
+    PRIMARY KEY (nome)
+);
